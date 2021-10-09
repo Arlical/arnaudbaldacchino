@@ -1,0 +1,45 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?d9cf6516cdcd86f211b590dd6d1424ad") format("truetype"),
+url("./flaticon.woff?d9cf6516cdcd86f211b590dd6d1424ad") format("woff"),
+url("./flaticon.woff2?d9cf6516cdcd86f211b590dd6d1424ad") format("woff2"),
+url("./flaticon.eot?d9cf6516cdcd86f211b590dd6d1424ad#iefix") format("embedded-opentype"),
+url("./flaticon.svg?d9cf6516cdcd86f211b590dd6d1424ad#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "seo": "\f101",
+    "web-programming": "\f102",
+    "domain": "\f103",
+    "database": "\f104",
+    "database-1": "\f105",
+);
+
+.flaticon-seo:before {
+    content: map-get($flaticon-map, "seo");
+}
+.flaticon-web-programming:before {
+    content: map-get($flaticon-map, "web-programming");
+}
+.flaticon-domain:before {
+    content: map-get($flaticon-map, "domain");
+}
+.flaticon-database:before {
+    content: map-get($flaticon-map, "database");
+}
+.flaticon-database-1:before {
+    content: map-get($flaticon-map, "database-1");
+}
